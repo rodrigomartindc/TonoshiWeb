@@ -1,0 +1,152 @@
+* {
+      font-family: "Raleway", sans-serif;
+    }
+
+
+    :root {
+      --blanco: white;
+      --violeta: #5c488e ;
+      --naranja:  #e3772d ;
+    }
+
+    .site-footer
+    {
+      background-color:rgb(230, 230, 230);
+      padding:20px 0 20px;
+      font-size:15px;
+      line-height:24px;
+      color:#737373;
+    }
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      align-content: space-around;
+      flex-wrap: wrap;
+    }
+
+
+    .site-footer hr
+    {
+      border-top-color:#bbb;
+      opacity:0.5
+    }
+    .site-footer hr.small
+    {
+      margin:20px 0
+    }
+    .site-footer h6
+    {
+      color: black;
+      font-size:15px;
+      text-align: center;
+      text-transform:uppercase;
+      margin-bottom: 20px;
+      letter-spacing:2px
+    }
+    .site-footer a
+    {
+      color:#737373;
+    }
+    .site-footer a:hover
+    {
+      color:#3366cc;
+      text-decoration:none;
+    }
+    .footer-links
+    {
+      padding-left:0;
+      list-style:none
+    }
+    .footer-links li
+    {
+      display:block
+    }
+    .footer-links a
+    {
+      color:#737373
+    }
+    .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+    {
+      color:#3366cc;
+      text-decoration:none;
+    }
+    .footer-links.inline li
+    {
+      display:inline-block
+    }
+
+    .copyright-text
+    {
+      margin:0
+    }
+
+    .footer-title{
+      opacity: 0.8;
+    }
+
+    .instagram, .whatsapp, .telefono{
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 12px;
+    }
+    
+    .instagram-tonoshi-a, .whatsapp-tonoshi-a, .telefono-tonoshi-a {
+      text-align: center;
+      opacity: 0.8;
+    }
+
+    .instagram-tonoshi{
+      max-width: 50px;
+      margin: 10px 10px
+      
+    }
+    
+
+    .whatsapp-tonoshi{
+      width: 30px;
+      max-width: 50px;
+      margin: 10px 10px;
+    }
+    
+    
+     .telefono-tonoshi{
+      width: 5px;
+      max-width: 5px;
+      margin: 10px 10px;
+    }
+    
+    .whatsapp {
+        font-size: 25px;
+    }
+    
+    .div-prueba{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      align-items: flex-end;
+    }
+
+    @media (max-width:991px)
+    {
+      .site-footer [class^=col-]
+      {
+        margin-bottom:20px
+      }
+    }
+    @media (max-width:767px)
+    {
+      .site-footer
+      {
+        padding-bottom:0
+      }
+      .site-footer .copyright-text,.site-footer .social-icons
+      {
+        text-align:center
+      }
+    }
+ 

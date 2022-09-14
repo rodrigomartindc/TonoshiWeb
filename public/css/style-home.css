@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700');
+
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --blanco: #000000;
+  --violeta: #55438f ;
+  --naranja:  #bd682f ;
+  --violeta-claro:  #8c7ba6;
+}
+
+
+/* Main */
+
+.contenedorImagenhome{
+  position: relative;
+  width: 100vw;
+  /* height: 50vh; */
+  top: 0;
+  z-index: 9;
+}
+
+.coverhome {
+  opacity: 1;
+  width: 100vw;
+  height: 60vh;
+  top: 0; 
+  animation: zoom-in-zoom-out 0.4s ease-in-out forwards;
+}
+
+
+/* Animated Cover Header */
+
+.headerCover {
+	font-family: 'Roboto', serif;
+	-webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 27%;
+  left: 60vw;
+  z-index: 9999999;
+  width: 100%;
+}
+
+.containerHeaderCover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* min-height: 100vh; */
+  height: 20vh;
+  width: 40vw;
+	background-color: transparent;
+}
+
+.header-title-container {
+	position: relative;
+	display: block;
+	margin: 0;
+	font-size: 4rem;
+  text-align: right;
+	line-height: 1;
+	transform: translateX(10rem);
+	animation: up 300ms ease-out forwards;
+	z-index: 1;
+	text-shadow: 0px 0px 0px rgb(170, 170, 170);
+  overflow: hidden;
+	padding-bottom: 0.4rem;
+}
+
+.header-title{
+  margin-bottom: 0px;
+  line-height: 1.5;
+  overflow-y: hidden;
+  color: #c26f34;
+  text-shadow: none;
+  font-weight: 100;
+}
+
+.header-subtitle{
+  text-shadow: 0px 0px 0px rgb(170, 170, 170);
+  font-family: "Kanit";
+  line-height: 1;
+  overflow-y: hidden;
+}
+
+.opacity-fill{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  background-color: #8c7ba6;
+  background: linear-gradient(to left, black, transparent);
+  opacity: 0.2;
+  transform: translateX(100vw);
+	animation: up 300ms linear forwards;
+}
+
+.logo-pedidosYa{
+  position: absolute;
+  width: 50px;
+  z-index: 98;
+  bottom: 0px;
+}
+
+/* Sucursales Btn */
+
+.btn-sucursal {
+  position: absolute;
+  text-align: center;
+  border: 1px var(--violeta) solid;
+  border-radius: 7px;
+  background-color: var(--violeta);
+  margin: 5px;
+  width: 40%;
+  height: 10%;
+  top: 60%;
+  right: 5%;
+  z-index: 999999;
+  max-width: 300px;
+  transform: translateY(15rem);
+	animation: up 300ms ease-out forwards;
+  box-shadow:inset 2px 2px 2px 0px rgba(128, 128, 128, 0.582),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  overflow-y: hidden;
+}
+
+.btn-zona-norte {
+  top: 75%;
+  border-radius: 7px;
+}
+
+.btn-sucursal a {
+  padding: 7%;
+  font-size: 14px;
+  font-family: "Kanit";
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: rgb(209, 209, 209);
+  border: none;
+  overflow-y: hidden;
+}
+
+.fa-map-marker-alt {
+  padding-top: 5px;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+
+.btn-sucursal:hover {
+  color: #000;
+  background-color: var(--violeta-claro);
+  background-image: linear-gradient(315deg, #8c7ba6 0%, #a690c7 74%);
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+
+.btn-sucursal a:hover {
+  color: var(--blanco);
+}
+
+
+
+/* Menu - Delivery */
+
+.menuDelivery {
+  position: relative;
+  z-index: 999999999;
+}
+
+.menuTitle{
+  margin-top: 15px;
+  color: var(--violeta);
+  text-align: center;
+  
+
+}
+
+.contenedor-btn-menu{
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.btn-menu{
+  padding: 5px 20px;
+  text-align: center;
+  border: 1px var(--violeta) solid;
+  background-color: var(--violeta);
+  border-radius: 7px;
+}
+
+.btn-menu a {
+  text-decoration: none;
+  color: var(--blanco);
+  border: none;
+  font-family: 'Kanit';
+  font-weight: normal;
+  font-size: 14px;
+
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-14 {
+  background: var(--violeta);
+  border: none;
+  z-index: 1;
+}
+.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: var(--violeta-claro);
+  background-image: linear-gradient(315deg, #8c7ba6 0%, #a690c7 74%);
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-14:hover {
+  color: #000;
+}
+.btn-14:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+.btn-14:active {
+  top: 2px;
+}
+
+
+.btn-menu a:hover {
+  color: var(--blanco);
+}
+
+/* .btn-menu:hover{
+  background-color: var(--violeta-claro);
+}  */
+
+
+/* KEYFRAMES ANIMATIONS */
+
+@keyframes up {
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes draw {
+	
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width:991px){
+
+
+
+  .barra-menu{
+    height: 10vh;
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+    right: 45%; 
+    z-index: 9999999;
+    
+  } 
+  .logo-tonoshi{
+    max-width: 120px;
+    
+  }
+
+ .btn-zona-norte{
+   top: 82%;
+
+ }
+
+ .btn-villa-crespo{
+   top: 65%;
+}
+ 
+ 
+    }
